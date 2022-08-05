@@ -33,8 +33,6 @@ resource "aws_security_group" "db_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-# Database instance in private subnet 1
 # Database instance in private subnet 1
 resource "aws_db_instance" "db1" {
     allocated_storage    = 5
